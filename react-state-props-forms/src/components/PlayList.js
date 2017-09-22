@@ -10,7 +10,7 @@ export default class PlayList extends Component {
   }
 
   componentDidMount() {
-    fetch('http://tiny-tiny.herokuapp.com/collections/playlisting').then(results => {
+    fetch('https://tiny-tiny.herokuapp.com/collections/playlisting').then(results => {
           return results.json();
         }).then(data => {
           this.setState({songs: data});
@@ -20,7 +20,7 @@ export default class PlayList extends Component {
   //function to update playlist when user pushes "update list" button
   fetchData = (e) => {
       e.preventDefault();
-      fetch('http://tiny-tiny.herokuapp.com/collections/playlisting').then(results => {
+      fetch('https://tiny-tiny.herokuapp.com/collections/playlisting').then(results => {
         return results.json();
       }).then(data => {
         console.log(data)

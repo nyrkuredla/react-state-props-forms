@@ -25,7 +25,7 @@ export default class PlayListForm extends Component {
       this.setState({userName: e.target.value, songTitle: e.target.value, songArtist: e.target.value, songNotes: e.target.value});
       let listItem = JSON.stringify(this.state);
 
-      fetch("http://tiny-tiny.herokuapp.com/collections/playlisting", {
+      fetch("https://tiny-tiny.herokuapp.com/collections/playlisting", {
         method: "POST",
         body: listItem,
         headers: {
