@@ -29,7 +29,7 @@ const PlayListForm = (props) => {
         <input className="form-control"
           name="notes"
           // value={this.state.notes}
-          type="textarea"
+          type="textarea" size="30"
           placeholder="Notes about song:"
           // onChange={this._handleChange}
         />

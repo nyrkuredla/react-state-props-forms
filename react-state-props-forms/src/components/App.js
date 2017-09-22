@@ -6,7 +6,13 @@ import NavBar from './NavBar'
 import PlayList from './PlayList'
 import PlayListForm from './PlayListForm'
 
-class App extends Component {
+export default class App extends Component {
+  constructor(){
+    super();
+    this.state={
+      songs: []
+    }
+  }
   render() {
     return (
       <div className="App">
@@ -17,5 +23,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
