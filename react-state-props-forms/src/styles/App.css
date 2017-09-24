@@ -1,5 +1,59 @@
-html {
+/*Fonts:*/
+/*
+Header:
+font-family: 'Lustria', serif;
+
+Body:
+font-family: 'Josefin Sans', sans-serif;*/
+
+body {
   height: 100vh;
   width: 100vw;
-  background-color: grey;
+}
+
+.nav-bar {
+  background-image: url('../images/turntable-photo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  text-align: center;
+}
+
+.header {
+  font-family: 'Lustria', serif;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 10px;
+}
+
+input {
+  margin: 10px;
+}
+
+.update {
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  color: #e0e0e0;
+  width: 10%;
+}
+
+.button {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.playlist-item {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
 }

@@ -18,7 +18,7 @@ export default class App extends Component {
       <div className="App">
         <NavBar />
         <PlayListForm />
-        <PlayList />
+        <PlayList />    
       </div>
     );
   }

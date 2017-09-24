@@ -33,13 +33,17 @@ export default class PlayList extends Component {
     console.log("state", this.state.songs)
   return (
     <div className="play-list">
-      <h2>Look at what other people are listening to!:</h2>
-      <button className="btn btn-primary btn-lg" type="update" onClick={this.fetchData}>Update list</button>
+      <h2 className="header">Here's what other people are listening to...</h2>
+      <button className="col col-med-2 align-self-center update button btn btn-secondary btn-link" type="update" onClick={this.fetchData}>Update list</button>
       {this.state.songs.map((songInfo) => {
-        return <PlayListItem
-          key={songInfo._id}
-          songInfo={songInfo}
-          />
+        return <div className="row">
+          <div className="playlist-item col-sm-12 col-md-6">
+            <PlayListItem
+              key={songInfo._id}
+              songInfo={songInfo}
+            />
+          </div>
+        </div>
       })}
     </div>
   )

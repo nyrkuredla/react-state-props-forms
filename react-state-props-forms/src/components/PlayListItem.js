@@ -4,14 +4,13 @@ export default class PlayListItem extends Component {
   render() {
     const { songInfo } = this.props;
     return (
-      <div className="playlist-item card col-sm-12 col-md-4">
-        {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
+      <div className="card">
         <div className="card-body">
           <ul>
-            <li>User: {songInfo.userName}</li>
-            <li>Artist/Band: {songInfo.songArtist}</li>
-            <li>Title: {songInfo.songTitle}</li>
-            <li>Notes: {songInfo.songNotes}</li>
+            <li><strong>User:</strong> {songInfo.userName}</li>
+            <li><strong>Artist/Band:</strong> {songInfo.songArtist}</li>
+            <li><strong>Title:</strong> {songInfo.songTitle}</li>
+            <li><strong>Notes:</strong> {songInfo.songNotes}</li>
           </ul>
         </div>
       </div>

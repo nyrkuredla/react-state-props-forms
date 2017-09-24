@@ -45,8 +45,8 @@ export default class PlayListForm extends Component {
   render() {
     return (
       <div className="play-list">
-        <form className="form-group">
-          <h2>What are you listening to?</h2>
+        <form className="form-group col-md-6">
+          <h2 className="header">What are you listening to?</h2>
           <input className="form-control"
             name="userName"
             value={this.state.userName}
@@ -75,7 +75,7 @@ export default class PlayListForm extends Component {
             placeholder="Notes about song:"
             onChange={this._handleChange}
           />
-          <button className="btn btn-primary btn-lg" type="submit" onClick={this.addToList}>Submit!</button>
+          <button className="btn btn-block btn-link button" type="submit" onClick={this.addToList}>Submit!</button>
         </form>
       </div>
     )
