@@ -11,6 +11,10 @@ body {
   width: 100vw;
 }
 
+.App {
+  margin: 30px 0;
+}
+
 .nav-bar {
   background-image: url('../images/turntable-photo.jpeg');
   background-repeat: no-repeat;
